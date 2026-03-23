@@ -1,0 +1,129 @@
+<div style="font-family:'Playfair Display', serif; text-align:center; color:white;">
+
+<style>
+body{margin:0; background:black;}
+
+.fondo{
+  background: radial-gradient(circle at center, #8b0000, #1a0000 70%, black);
+  padding:40px 20px;
+  border-radius:20px;
+  position:relative;
+}
+
+.frase{
+  font-size:28px;
+  margin-bottom:20px;
+  text-shadow:0 0 20px white,0 0 40px silver;
+  animation:fadeIn 2s ease;
+}
+
+.seccion{
+  margin-top:25px;
+  padding:20px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.2);
+  box-shadow:0 0 15px rgba(255,255,255,0.2);
+  animation:fadeInUp 1.5s ease;
+}
+
+.icono{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.boton{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 22px;
+  border-radius:30px;
+  background:linear-gradient(45deg,#b30000,#ff1a1a);
+  color:white;
+  text-decoration:none;
+  box-shadow:0 0 15px rgba(255,0,0,0.7);
+  transition:0.3s;
+}
+
+.boton:hover{
+  box-shadow:0 0 25px white;
+}
+
+.tarjetas{
+  max-height:0;
+  overflow:hidden;
+  transition:0.5s;
+}
+
+.tarjetas:target{
+  max-height:300px;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes fadeInUp{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+
+<div class="fondo">
+
+<p class="frase">Te invito a una noche mágica ✨</p>
+
+<div class="seccion">
+<span class="icono">📍</span>
+<h3>Ubicación</h3>
+<p>La Quinta</p>
+<p>Celso Barrios 3490, Córdoba</p>
+<a class="boton" href="https://www.google.com/maps?q=Celso+Barrios+3490+Córdoba" target="_blank">Ver en Maps</a>
+</div>
+
+<div class="seccion">
+<span class="icono">📲</span>
+<h3>Confirmar asistencia</h3>
+<a class="boton" href="https://wa.me/5435155736872?text=Hola! Confirmo asistencia 💖" target="_blank">Confirmar</a>
+</div>
+
+<div class="seccion">
+<span class="icono">🎁</span>
+<h3>Tarjetas</h3>
+
+<a href="#info" class="boton">Ver información</a>
+
+<div id="info" class="tarjetas">
+  <p>🎉 Valor de la tarjeta:</p>
+  <p>💲110.000 mayores de 10 años</p>
+  <p>💲55.000 niños de 3 a 10 años</p>
+  <p>👶 Menores de 3 años no abonan</p>
+  <br>
+  <p>📌 Incluye cena y acceso al evento</p>
+  <p>💌 Confirmar asistencia previamente</p>
+</div>
+
+</div>
+
+<div class="seccion">
+<span class="icono">📸</span>
+<h3>Instagram</h3>
+<a class="boton" href="https://instagram.com/jose.linoviedo12" target="_blank">Ir</a>
+</div>
+
+<div class="seccion">
+<span class="icono">🎶</span>
+<h3>Playlist</h3>
+<a class="boton" href="https://docs.google.com/spreadsheets/d/1ksXrT1ZtIMUPPDH83WV__9dwcpfVwO2-/edit" target="_blank">Agregar canción</a>
+</div>
+
+<div class="seccion">
+<span class="icono">👗</span>
+<h3>Dress Code</h3>
+<p>Elegante Sport</p>
+<p>Rojo exclusivo para la quinceañera ❤️</p>
+</div>
+
+</div>
+  </div>
